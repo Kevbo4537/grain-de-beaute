@@ -19,6 +19,7 @@ export const nav = [
   ['Accueil', '/'],
   ['Technique mixte', '/technique-mixte-sourcils/'],
   ['Cicatrisation', '/cicatrisation-conseils/'],
+  ['Près de Tours', '/maquillage-semi-permanent-sourcils-tours/'],
   ['Tarifs', '/tarifs/'],
   ['Galerie', '/galerie/'],
   ['Contact', '/contact/']

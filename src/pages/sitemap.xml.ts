@@ -1,3 +1,3 @@
 import type { APIRoute } from 'astro';
-const pages = ['', 'technique-mixte-sourcils/', 'deroulement-seance/', 'cicatrisation-conseils/', 'tarifs/', 'galerie/', 'demande-avis-sourcils/', 'sophie-bodin/', 'hygiene-securite/', 'technique-mixte-sourcils-pres-de-tours/', 'contact/', 'mentions-legales/', 'confidentialite/'];
+const pages = ['', 'technique-mixte-sourcils/', 'maquillage-semi-permanent-sourcils-tours/', 'deroulement-seance/', 'cicatrisation-conseils/', 'tarifs/', 'galerie/', 'demande-avis-sourcils/', 'sophie-bodin/', 'hygiene-securite/', 'technique-mixte-sourcils-pres-de-tours/', 'contact/', 'mentions-legales/', 'confidentialite/'];
 export const GET: APIRoute = () => new Response(`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${pages.map(p=>`<url><loc>https://kevbo4537.github.io/grain-de-beaute/${p}</loc></url>`).join('')}</urlset>`, { headers: { 'Content-Type': 'application/xml' } });
