@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import { url } from '../data';
-import { galleryItems } from '../gallery';
+import { galleryPairs } from '../gallery';
 ---
 <Base title="Galerie avant/après sourcils | Grain de Beauté Monnaie" description="Galerie avant/après Grain de Beauté : photos de technique mixte sourcils à Monnaie près de Tours, publiées avec accord et optimisées pour le web." canonical="/galerie/">
   <section>
@@ -11,14 +11,17 @@ import { galleryItems } from '../gallery';
     <p>La publication d’une photo avant/après nécessite toujours un accord explicite. Une photo peut être retirée sur demande.</p>
   </section>
   <section class="section-soft">
-    <div class="gallery-grid">
-      {galleryItems.map((item) => (
-        <article class="gallery-card">
-          <img src={url(item.src)} alt={item.alt} loading="lazy" />
-          <div>
-            <span>{item.category}</span>
-            <h2>{item.title}</h2>
-            <p>{item.caption}</p>
+    <div class="pair-grid">
+      {galleryPairs.map((pair) => (
+        <article class="pair-card">
+          <div class="pair-images">
+            <figure><span>Avant</span><img src={url(pair.before)} alt={pair.beforeAlt} loading="lazy" /></figure>
+            <figure><span>Après</span><img src={url(pair.after)} alt={pair.afterAlt} loading="lazy" /></figure>
+          </div>
+          <div class="pair-content">
+            <span>{pair.category}</span>
+            <h2>{pair.title}</h2>
+            <p>{pair.caption}</p>
           </div>
         </article>
       ))}

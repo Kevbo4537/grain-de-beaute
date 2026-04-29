@@ -1,51 +1,74 @@
-export const galleryItems = [
+export const galleryPairs = [
   {
-    src: 'images/galerie/technique-mixte-sourcils-monnaie-tours-avant-apres-01.webp',
-    alt: 'Avant après technique mixte sourcils à Monnaie près de Tours - sourcil naturel restructuré',
     title: 'Technique mixte sourcils - résultat naturel',
-    caption: 'Avant/après : sourcil redessiné avec un rendu plus structuré et harmonieux.',
-    category: 'Technique mixte'
+    category: 'Technique mixte',
+    before: 'images/galerie/split/technique-mixte-sourcils-monnaie-tours-avant-01.webp',
+    after: 'images/galerie/split/technique-mixte-sourcils-monnaie-tours-apres-01.webp',
+    beforeAlt: 'Avant technique mixte sourcils à Monnaie près de Tours - sourcil naturel avant prestation',
+    afterAlt: 'Après technique mixte sourcils à Monnaie près de Tours - sourcil restructuré après prestation',
+    caption: 'Ligne plus structurée, sourcil plus présent et regard mieux encadré.'
   },
   {
-    src: 'images/galerie/technique-mixte-sourcils-monnaie-tours-avant-apres-02.webp',
-    alt: 'Avant après microblading microshading sourcils près de Tours - sourcil plus défini',
     title: 'Sourcil plus défini',
-    caption: 'Avant/après : ligne plus visible, sourcil densifié et regard mieux encadré.',
-    category: 'Technique mixte'
+    category: 'Microblading + microshading',
+    before: 'images/galerie/split/technique-mixte-sourcils-monnaie-tours-avant-02.webp',
+    after: 'images/galerie/split/technique-mixte-sourcils-monnaie-tours-apres-02.webp',
+    beforeAlt: 'Avant microblading microshading sourcils près de Tours - sourcil clairsemé avant',
+    afterAlt: 'Après microblading microshading sourcils près de Tours - sourcil plus défini',
+    caption: 'Comparaison avant/après avec une ligne plus nette et plus régulière.'
   },
   {
-    src: 'images/galerie/technique-mixte-sourcils-monnaie-tours-avant-apres-03.webp',
-    alt: 'Avant après maquillage semi-permanent sourcils Tours - effet structuré et naturel',
-    title: 'Effet structuré',
-    caption: 'Avant/après : travail de structuration avec intensité adaptée au visage.',
-    category: 'Effet naturel'
+    title: 'Effet structuré et naturel',
+    category: 'Effet naturel',
+    before: 'images/galerie/split/technique-mixte-sourcils-monnaie-tours-avant-03.webp',
+    after: 'images/galerie/split/technique-mixte-sourcils-monnaie-tours-apres-03.webp',
+    beforeAlt: 'Avant maquillage semi-permanent sourcils Tours - ligne naturelle avant prestation',
+    afterAlt: 'Après maquillage semi-permanent sourcils Tours - sourcil plus structuré',
+    caption: 'Travail de restructuration avec intensité adaptée au visage.'
   },
   {
-    src: 'images/galerie/technique-mixte-sourcils-monnaie-tours-avant-apres-04.webp',
-    alt: 'Avant après technique mixte sourcils Monnaie - sourcil foncé et redessiné',
     title: 'Ligne redessinée',
-    caption: 'Avant/après : sourcil plus présent, ligne plus nette et regard harmonisé.',
-    category: 'Restructuration'
+    category: 'Restructuration',
+    before: 'images/galerie/split/technique-mixte-sourcils-monnaie-tours-avant-04.webp',
+    after: 'images/galerie/split/technique-mixte-sourcils-monnaie-tours-apres-04.webp',
+    beforeAlt: 'Avant technique mixte sourcils Monnaie - sourcil avant restructuration',
+    afterAlt: 'Après technique mixte sourcils Monnaie - sourcil foncé et redessiné',
+    caption: 'Sourcil plus présent, ligne plus nette et regard harmonisé.'
   },
   {
-    src: 'images/galerie/technique-mixte-sourcils-monnaie-tours-avant-apres-05.webp',
-    alt: 'Avant après microshading sourcils près de Tours - sourcil clairsemé restructuré',
     title: 'Sourcils clairsemés',
-    caption: 'Avant/après : effet plus fourni et plus régulier.',
-    category: 'Restructuration'
+    category: 'Restructuration',
+    before: 'images/galerie/split/technique-mixte-sourcils-monnaie-tours-avant-05.webp',
+    after: 'images/galerie/split/technique-mixte-sourcils-monnaie-tours-apres-05.webp',
+    beforeAlt: 'Avant microshading sourcils près de Tours - sourcil clairsemé',
+    afterAlt: 'Après microshading sourcils près de Tours - sourcil restructuré',
+    caption: 'Effet plus fourni et ligne plus régulière.'
   },
   {
-    src: 'images/galerie/technique-mixte-sourcils-monnaie-tours-avant-apres-06.webp',
-    alt: 'Avant après sourcils semi-permanent à Monnaie près de Tours - résultat maquillage permanent',
     title: 'Avant/après sourcils',
-    caption: 'Avant/après : comparaison visuelle de la ligne avant et après prestation.',
-    category: 'Technique mixte'
+    category: 'Technique mixte',
+    before: 'images/galerie/split/technique-mixte-sourcils-monnaie-tours-avant-06.webp',
+    after: 'images/galerie/split/technique-mixte-sourcils-monnaie-tours-apres-06.webp',
+    beforeAlt: 'Avant sourcils semi-permanent à Monnaie près de Tours',
+    afterAlt: 'Après sourcils semi-permanent à Monnaie près de Tours',
+    caption: 'Comparaison visuelle de la ligne avant et après prestation.'
   },
   {
-    src: 'images/galerie/technique-mixte-sourcils-monnaie-tours-avant-apres-07.webp',
-    alt: 'Avant après maquillage permanent sourcils Tours - sourcil plus plein et structuré',
     title: 'Résultat plus structuré',
-    caption: 'Avant/après : sourcil plus dense et forme plus lisible.',
-    category: 'Technique mixte'
+    category: 'Technique mixte',
+    before: 'images/galerie/split/technique-mixte-sourcils-monnaie-tours-avant-07.webp',
+    after: 'images/galerie/split/technique-mixte-sourcils-monnaie-tours-apres-07.webp',
+    beforeAlt: 'Avant maquillage permanent sourcils Tours - sourcil avant prestation',
+    afterAlt: 'Après maquillage permanent sourcils Tours - sourcil plus plein et structuré',
+    caption: 'Sourcil plus dense et forme plus lisible.'
   }
 ];
+
+export const galleryItems = galleryPairs.map((pair, index) => ({
+  src: pair.after,
+  alt: pair.afterAlt,
+  title: pair.title,
+  caption: pair.caption,
+  category: pair.category,
+  index
+}));
