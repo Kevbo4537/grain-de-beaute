@@ -1,0 +1,6 @@
+---
+import Base from '../layouts/Base.astro'; import { business, tel, sms, whatsapp } from '../data';
+---
+<Base title="Contact Grain de Beauté à Monnaie près de Tours" description="Contactez Sophie Bodin pour une demande d’avis sourcils, un rendez-vous ou des informations sur la technique mixte à Monnaie près de Tours." canonical="/contact/">
+<section><h1>Contact</h1><p>Grain de Beauté reçoit sur rendez-vous uniquement, à Monnaie près de Tours.</p><div class="contact-grid"><div class="card"><h2>Coordonnées</h2><p><strong>Téléphone :</strong> <a href={tel}>{business.phone}</a><br/><strong>Email :</strong> <a href={`mailto:${business.email}`}>{business.email}</a><br/><strong>Adresse :</strong> {business.address}<br/><strong>Horaires :</strong> {business.hours}</p><div class="cta-row"><a class="btn" href={tel}>Appeler</a><a class="btn outline" href={sms}>Envoyer un SMS</a><a class="btn outline" href={whatsapp}>WhatsApp</a></div></div><div class="card"><h2>Accès</h2><p>Situé à Monnaie, l’institut est accessible depuis Tours, Parçay-Meslay et les communes alentours.</p><a class="btn outline" href="https://maps.google.com/?q=364+route+de+La+Sinsonni%C3%A8re+37380+Monnaie">Ouvrir l’itinéraire</a></div></div></section>
+</Base>

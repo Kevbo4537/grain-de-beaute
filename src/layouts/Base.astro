@@ -1,0 +1,54 @@
+---
+import { business, nav, url, tel, sms, whatsapp } from '../data';
+const { title, description, canonical = Astro.url.pathname } = Astro.props;
+const canonicalUrl = new URL(url(canonical), Astro.site || 'https://kevbo4537.github.io').toString();
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BeautySalon',
+  '@id': `${canonicalUrl}#business`,
+  name: business.name,
+  url: canonicalUrl,
+  telephone: business.phoneHref,
+  email: business.email,
+  address: { '@type': 'PostalAddress', streetAddress: '364 route de la Sinsonnière', postalCode: '37380', addressLocality: 'Monnaie', addressRegion: 'Indre-et-Loire', addressCountry: 'FR' },
+  areaServed: ['Monnaie', 'Tours', 'Parçay-Meslay', 'Indre-et-Loire'],
+  founder: { '@type': 'Person', name: business.practitioner },
+  openingHoursSpecification: [{ '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday'], opens: '09:00', closes: '18:00' }],
+  priceRange: '€€',
+  hasOfferCatalog: { '@type': 'OfferCatalog', name: 'Technique mixte sourcils', itemListElement: [
+    { '@type': 'Offer', price: '210', priceCurrency: 'EUR', itemOffered: { '@type': 'Service', name: 'Technique mixte sourcils microblading et microshading' } },
+    { '@type': 'Offer', price: '70', priceCurrency: 'EUR', itemOffered: { '@type': 'Service', name: 'Retouche dans le mois suivant' } },
+    { '@type': 'Offer', price: '90', priceCurrency: 'EUR', itemOffered: { '@type': 'Service', name: 'Retouche annuelle' } }
+  ]}
+};
+---
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonicalUrl} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:image" content={new URL(url('images/hero-sourcils.png'), Astro.site || 'https://kevbo4537.github.io').toString()} />
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(schema)} />
+  <link rel="stylesheet" href={url('styles.css')} />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href={url()} aria-label="Accueil Grain de Beauté"><img src={url('images/logo.png')} alt="Logo Grain de Beauté" /><span>Grain de Beauté</span></a>
+    <nav>{nav.map(([label, href]) => <a href={url(href)}>{label}</a>)}</nav>
+    <a class="header-phone" href={tel}>{business.phone}</a>
+  </header>
+  <main><slot /></main>
+  <footer class="footer">
+    <div><strong>{business.name}</strong><p>{business.practitioner}, maquillage semi-permanent des sourcils à Monnaie près de Tours.</p></div>
+    <div><strong>Contact</strong><p><a href={tel}>{business.phone}</a><br/><a href={`mailto:${business.email}`}>{business.email}</a><br/>{business.address}</p></div>
+    <div><strong>Informations</strong><p>{business.hours}<br/>SIRET : {business.siret}</p><p><a href={url('mentions-legales/')}>Mentions légales</a> · <a href={url('confidentialite/')}>Confidentialité</a></p></div>
+  </footer>
+  <div class="mobile-bar"><a href={tel}>Appeler</a><a href={sms}>SMS</a><a href={whatsapp}>WhatsApp</a><a href={url('demande-avis-sourcils/')}>Avis</a></div>
+</body>
+</html>

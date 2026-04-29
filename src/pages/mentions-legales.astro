@@ -1,0 +1,6 @@
+---
+import Base from '../layouts/Base.astro'; import { business } from '../data';
+---
+<Base title="Mentions légales | Grain de Beauté" description="Mentions légales du site Grain de Beauté." canonical="/mentions-legales/">
+<section><h1>Mentions légales</h1><h2>Éditeur</h2><p>{business.name}<br/>{business.practitioner}<br/>SIRET : {business.siret}<br/>{business.address}<br/>{business.phone}<br/>{business.email}</p><h2>Hébergement</h2><p>Hébergement définitif à confirmer avant mise en production. Le site actuel sera remplacé après validation et sauvegarde.</p><h2>Propriété intellectuelle</h2><p>Les textes, images, logos et contenus du site ne peuvent pas être réutilisés sans autorisation.</p></section>
+</Base>
