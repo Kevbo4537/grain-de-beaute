@@ -1,5 +1,5 @@
 ---
-import { business, nav, url, tel, sms, whatsapp } from '../data';
+import { business, mainNav, infoNav, url, tel, sms, whatsapp } from '../data';
 const { title, description, canonical = Astro.url.pathname } = Astro.props;
 const canonicalUrl = new URL(url(canonical), Astro.site || 'https://kevbo4537.github.io').toString();
 const schema = {
@@ -40,7 +40,15 @@ const schema = {
 <body>
   <header class="site-header">
     <a class="brand" href={url()} aria-label="Accueil Grain de Beauté"><img src={url('images/logo-clean.png')} alt="Logo Grain de Beauté" /><span>Grain de Beauté</span></a>
-    <nav>{nav.map(([label, href]) => <a href={url(href)}>{label}</a>)}</nav>
+    <nav class="desktop-nav" aria-label="Navigation principale">
+      {mainNav.map(([label, href]) => <a href={url(href)}>{label}</a>)}
+      <details class="nav-dropdown">
+        <summary>Infos pratiques</summary>
+        <div class="dropdown-panel">
+          {infoNav.map(([label, href]) => <a href={url(href)}>{label}</a>)}
+        </div>
+      </details>
+    </nav>
     <a class="header-phone" href={tel}>{business.phone}</a>
   </header>
   <main><slot /></main>

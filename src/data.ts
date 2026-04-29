@@ -15,15 +15,23 @@ export const business = {
   whatsappText: 'Bonjour Sophie, je souhaite avoir un avis pour mes sourcils. Je vais vous envoyer quelques photos : visage de face, sourcil gauche et sourcil droit.'
 };
 
-export const nav = [
+export const mainNav = [
   ['Accueil', '/'],
   ['Technique mixte', '/technique-mixte-sourcils/'],
-  ['Cicatrisation', '/cicatrisation-conseils/'],
-  ['Près de Tours', '/maquillage-semi-permanent-sourcils-tours/'],
   ['Tarifs', '/tarifs/'],
   ['Galerie', '/galerie/'],
   ['Contact', '/contact/']
 ];
+
+export const infoNav = [
+  ['Cicatrisation et conseils', '/cicatrisation-conseils/'],
+  ['Près de Tours', '/maquillage-semi-permanent-sourcils-tours/'],
+  ['Déroulement d’une séance', '/deroulement-seance/'],
+  ['Hygiène et sécurité', '/hygiene-securite/'],
+  ['À propos de Sophie', '/sophie-bodin/']
+];
+
+export const nav = [...mainNav, ...infoNav];
 
 export const siteBase = import.meta.env.BASE_URL || '/';
 export const url = (path = '') => `${siteBase}${path.replace(/^\//, '')}`;
