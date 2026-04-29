@@ -1,6 +1,17 @@
 ---
-import Base from '../layouts/Base.astro'; import { business } from '../data';
+import Base from '../layouts/Base.astro';
+import { business } from '../data';
 ---
 <Base title="Confidentialité et photos | Grain de Beauté" description="Informations sur la confidentialité, les demandes de contact et l’utilisation des photos transmises à Grain de Beauté." canonical="/confidentialite/">
-<section><h1>Confidentialité</h1><p>Les informations transmises à Grain de Beauté servent à répondre aux demandes de contact et à préparer l’échange avec Sophie.</p><h2>Photos</h2><p>Les photos envoyées pour un avis sourcils servent uniquement à comprendre la demande. Elles ne sont jamais publiées sans autorisation explicite séparée.</p><h2>Contact</h2><p>Pour toute demande liée aux données personnelles ou au retrait d’une photo : {business.email}</p></section>
+  <section>
+    <h1>Confidentialité</h1>
+    <p>Les informations transmises à Grain de Beauté servent à répondre aux demandes de contact et à préparer l’échange avec Sophie.</p>
+    <h2>Photos envoyées pour un avis</h2>
+    <p>Les photos envoyées par une cliente servent à comprendre sa demande : ligne actuelle, ancienne pigmentation éventuelle, besoin de retouche ou souhait de restructuration.</p>
+    <p>Elles ne sont pas publiées sans autorisation explicite. Envoyer une photo pour un avis ne signifie pas qu’elle pourra être publiée.</p>
+    <h2>Photos avant/après publiées</h2>
+    <p>Les photos publiées sur le site sont utilisées sans nom de cliente. Une demande de retrait peut être envoyée à tout moment.</p>
+    <h2>Contact</h2>
+    <p>Pour toute demande liée aux données personnelles ou au retrait d’une photo : {business.email}</p>
+  </section>
 </Base>

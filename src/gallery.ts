@@ -6,7 +6,7 @@ export const galleryPairs = [
     after: 'images/galerie/split/technique-mixte-sourcils-monnaie-tours-apres-01.webp',
     beforeAlt: 'Avant technique mixte sourcils à Monnaie près de Tours - sourcil naturel avant prestation',
     afterAlt: 'Après technique mixte sourcils à Monnaie près de Tours - sourcil restructuré après prestation',
-    caption: 'Ligne plus structurée, sourcil plus présent et regard mieux encadré.'
+    caption: 'Ligne plus structurée, sourcil plus présent et regard visuellement mieux dessiné.'
   },
   {
     title: 'Sourcil plus défini',
@@ -32,8 +32,8 @@ export const galleryPairs = [
     before: 'images/galerie/split/technique-mixte-sourcils-monnaie-tours-avant-04.webp',
     after: 'images/galerie/split/technique-mixte-sourcils-monnaie-tours-apres-04.webp',
     beforeAlt: 'Avant technique mixte sourcils Monnaie - sourcil avant restructuration',
-    afterAlt: 'Après technique mixte sourcils Monnaie - sourcil foncé et redessiné',
-    caption: 'Sourcil plus présent, ligne plus nette et regard harmonisé.'
+    afterAlt: 'Après technique mixte sourcils Monnaie - sourcil plus défini et redessiné',
+    caption: 'Sourcil plus présent, ligne plus nette et ligne adaptée au visage.'
   },
   {
     title: 'Sourcils clairsemés',
@@ -49,8 +49,8 @@ export const galleryPairs = [
     category: 'Technique mixte',
     before: 'images/galerie/split/technique-mixte-sourcils-monnaie-tours-avant-06.webp',
     after: 'images/galerie/split/technique-mixte-sourcils-monnaie-tours-apres-06.webp',
-    beforeAlt: 'Avant sourcils semi-permanent à Monnaie près de Tours',
-    afterAlt: 'Après sourcils semi-permanent à Monnaie près de Tours',
+    beforeAlt: 'Avant maquillage semi-permanent des sourcils à Monnaie près de Tours',
+    afterAlt: 'Après maquillage semi-permanent des sourcils à Monnaie près de Tours',
     caption: 'Comparaison visuelle de la ligne avant et après prestation.'
   },
   {
@@ -60,7 +60,7 @@ export const galleryPairs = [
     after: 'images/galerie/split/technique-mixte-sourcils-monnaie-tours-apres-07.webp',
     beforeAlt: 'Avant maquillage permanent sourcils Tours - sourcil avant prestation',
     afterAlt: 'Après maquillage permanent sourcils Tours - sourcil plus plein et structuré',
-    caption: 'Sourcil plus dense et forme plus lisible.'
+    caption: 'Effet plus fourni et forme plus lisible.'
   }
 ];
 

@@ -1,6 +1,24 @@
 ---
 import Base from '../layouts/Base.astro';
+import { url } from '../data';
 ---
-<Base title="Hygiène et sécurité | Grain de Beauté Monnaie" description="Grain de Beauté accorde une attention particulière à l’hygiène, la sécurité, le consentement et l’échange préalable avant une prestation sourcils." canonical="/hygiene-securite/">
-<section><h1>Hygiène et sécurité</h1><p>Sophie Bodin dispose d’une formation hygiène et salubrité confirmée et d’une assurance professionnelle. Les détails précis du protocole matériel seront complétés après validation avec Sophie.</p></section><section class="section-soft"><div class="grid"><div class="card"><h3>Échange préalable</h3><p>Il permet de vérifier la demande, les précautions et les éventuelles situations à signaler.</p></div><div class="card"><h3>Consentement</h3><p>Les photos et informations transmises servent à préparer l’échange. La publication d’un avant/après nécessite un accord distinct.</p></div><div class="card"><h3>Limites</h3><p>La prestation ne convient pas automatiquement à toutes les situations. En cas de doute médical, demander un avis adapté.</p></div></div></section>
+<Base title="Hygiène et sécurité | Grain de Beauté Monnaie" description="Hygiène, formation hygiène et salubrité, assurance professionnelle, consentement photo et précautions avant une technique mixte sourcils." canonical="/hygiene-securite/">
+  <section>
+    <div class="eyebrow">Cadre de réalisation</div>
+    <h1>Hygiène et sécurité</h1>
+    <p>La prestation est réalisée dans un cadre attentif à l’hygiène et au confort. Sophie Bodin dispose d’une formation hygiène et salubrité ainsi que d’une assurance professionnelle.</p>
+    <p>Avant chaque prestation, un échange permet de vérifier votre demande, vos attentes et les éventuelles précautions à prendre.</p>
+  </section>
+  <section class="section-soft">
+    <div class="grid">
+      <div class="card"><h3>Échange préalable</h3><p>Sophie prend le temps de comprendre votre objectif : résultat naturel, ligne plus structurée, ancienne pigmentation, retouche ou besoin d’un premier avis.</p></div>
+      <div class="card"><h3>Consentement photo</h3><p>Les photos envoyées servent à préparer l’échange. Une publication avant/après nécessite un accord distinct et peut être retirée sur demande.</p></div>
+      <div class="card"><h3>Situations à signaler</h3><p>Certaines situations nécessitent un échange avant rendez-vous : grossesse, allaitement, traitement, allergie connue ou ancienne pigmentation.</p></div>
+    </div>
+  </section>
+  <section>
+    <h2>En cas de doute</h2>
+    <p>En cas de traitement, allergie ou doute particulier, Sophie pourra vous inviter à demander un avis professionnel avant de fixer le rendez-vous.</p>
+    <a class="btn" href={url('demande-avis-sourcils/')}>Préparer ma demande</a>
+  </section>
 </Base>
