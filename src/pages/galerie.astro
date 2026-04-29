@@ -1,6 +1,28 @@
 ---
-import Base from '../layouts/Base.astro'; import { url } from '../data';
+import Base from '../layouts/Base.astro';
+import { url } from '../data';
+import { galleryItems } from '../gallery';
 ---
-<Base title="Galerie avant/après sourcils | Grain de Beauté Monnaie" description="Galerie avant/après Grain de Beauté : photos de technique mixte sourcils à Monnaie près de Tours, publiées uniquement avec consentement explicite." canonical="/galerie/">
-<section><h1>Galerie avant/après</h1><p>Cette galerie est prête à recevoir les photos validées de Sophie. Aucune photo cliente ne doit être publiée sans consentement explicite.</p></section><section class="section-soft"><div class="gallery-placeholders"><div class="ph">Photo avant/après<br/>Technique mixte</div><div class="ph">Photo avant/après<br/>Effet naturel</div><div class="ph">Photo avant/après<br/>Retouche</div></div><p>Workflow prévu : suppression EXIF, compression WebP/AVIF, nom de fichier optimisé, alt text descriptif, anonymisation si nécessaire.</p><a class="btn" href={url('demande-avis-sourcils/')}>Demander un avis</a></section>
+<Base title="Galerie avant/après sourcils | Grain de Beauté Monnaie" description="Galerie avant/après Grain de Beauté : photos de technique mixte sourcils à Monnaie près de Tours, publiées avec accord et optimisées pour le web." canonical="/galerie/">
+  <section>
+    <div class="eyebrow">Avant/après</div>
+    <h1>Galerie sourcils avant/après</h1>
+    <p>Découvrez des exemples de sourcils restructurés avec un rendu plus net, plus harmonieux et adapté au visage. Les photos sont intégrées sans nom de cliente et optimisées pour le web.</p>
+    <p>La publication d’une photo avant/après nécessite toujours un accord explicite. Une photo peut être retirée sur demande.</p>
+  </section>
+  <section class="section-soft">
+    <div class="gallery-grid">
+      {galleryItems.map((item) => (
+        <article class="gallery-card">
+          <img src={url(item.src)} alt={item.alt} loading="lazy" />
+          <div>
+            <span>{item.category}</span>
+            <h2>{item.title}</h2>
+            <p>{item.caption}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+    <div class="cta-row"><a class="btn" href={url('demande-avis-sourcils/')}>Demander un avis</a><a class="btn outline" href={url('technique-mixte-sourcils/')}>Comprendre la technique</a></div>
+  </section>
 </Base>
