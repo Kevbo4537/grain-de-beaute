@@ -1,0 +1,91 @@
+---
+import Base from '../layouts/Base.astro';
+import { business, url, whatsapp } from '../data';
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Quelle différence entre microblading, microshading et technique mixte ?',
+  description: 'Comprendre simplement la différence entre microblading, microshading et technique mixte sourcils, avec Grain de Beauté à Monnaie près de Tours.',
+  author: { '@type': 'Organization', name: business.name },
+  publisher: { '@type': 'Organization', name: business.name },
+  mainEntityOfPage: 'https://graindebeaute37.fr/difference-microblading-microshading-technique-mixte/'
+};
+---
+<Base title="Microblading, microshading ou technique mixte ? | Grain de Beauté" description="Différence entre microblading, microshading et technique mixte sourcils : comprendre les effets, les limites et le choix proposé près de Tours." canonical="/difference-microblading-microshading-technique-mixte/">
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(articleSchema)} />
+
+  <section>
+    <div class="eyebrow">Conseils sourcils</div>
+    <h1>Quelle différence entre microblading, microshading et technique mixte ?</h1>
+    <p>Quand on cherche une solution pour redessiner ses sourcils, on rencontre souvent les mots microblading, microshading, maquillage semi-permanent ou technique mixte. Ces termes peuvent sembler proches, mais ils ne décrivent pas exactement le même rendu.</p>
+    <p>Chez Grain de Beauté, à Monnaie près de Tours, la prestation principale est la technique mixte sourcils. Elle associe l’effet poil à poil du microblading et l’ombrage doux du microshading, avec un objectif simple : obtenir une ligne plus harmonieuse, naturelle et adaptée au visage.</p>
+    <div class="cta-row">
+      <a class="btn" href={url('technique-mixte-sourcils/')}>Découvrir la technique mixte</a>
+      <a class="btn outline" href={whatsapp}>Demander un avis sur WhatsApp</a>
+    </div>
+  </section>
+
+  <section class="section-soft">
+    <h2>Le microblading : un effet poil à poil</h2>
+    <p>Le microblading est une technique qui permet de créer visuellement de petits traits fins, proches de l’apparence d’un poil. L’idée est de combler certaines zones clairsemées et de redonner une impression de ligne plus régulière.</p>
+    <p>Ce rendu peut être intéressant quand la cliente souhaite un effet discret et naturel. Mais le résultat dépend toujours de la base existante, de la peau, de la ligne naturelle du sourcil et de l’évolution après cicatrisation.</p>
+    <p>Il ne faut donc pas le présenter comme une solution magique ou garantie. Avant une prestation, un échange permet de vérifier ce qui est possible et ce qui sera le plus adapté.</p>
+  </section>
+
+  <section>
+    <h2>Le microshading : un ombrage doux</h2>
+    <p>Le microshading apporte un effet plus poudré, comme une légère ombre dans le sourcil. Il permet de donner plus de densité visuelle et de structurer la ligne avec un rendu plus maquillé, mais qui peut rester doux si l’intensité est bien adaptée.</p>
+    <p>Cette approche peut être utile lorsque le sourcil manque de définition ou lorsque la cliente souhaite un résultat un peu plus présent qu’un simple effet poil à poil.</p>
+    <p>Là encore, le but n’est pas de figer le regard. Le travail doit rester cohérent avec le visage, la couleur naturelle et le style souhaité.</p>
+  </section>
+
+  <section class="section-soft">
+    <h2>La technique mixte : associer les deux rendus</h2>
+    <p>La technique mixte combine le microblading et le microshading dans une même prestation. Le microblading apporte de la finesse. Le microshading apporte de la douceur et de la structure. L’association des deux permet d’adapter le rendu plus précisément.</p>
+    <p>C’est pour cette raison que Grain de Beauté met en avant la technique mixte comme prestation principale. Le microblading seul ou le microshading seul peuvent être expliqués, mais ils ne sont pas présentés comme deux offres commerciales séparées.</p>
+    <p>L’objectif est de construire une ligne de sourcils pensée pour votre visage : plus régulière, plus lisible, mais sans durcir les traits.</p>
+  </section>
+
+  <section>
+    <h2>Comment choisir entre ces techniques ?</h2>
+    <p>Le choix ne se fait pas seulement avec un nom de technique. Il dépend de plusieurs éléments : la forme actuelle des sourcils, les zones clairsemées, l’asymétrie, l’ancienne pigmentation éventuelle, le type de peau, le style souhaité et le niveau d’intensité attendu.</p>
+    <div class="grid">
+      <div class="card"><h3>Vous voulez un effet très naturel</h3><p>L’échange permet de voir si un rendu très discret est possible selon votre base naturelle et vos attentes.</p></div>
+      <div class="card"><h3>Vous voulez une ligne plus structurée</h3><p>Un ombrage doux peut aider à donner plus de présence au sourcil sans forcément donner un effet trop maquillé.</p></div>
+      <div class="card"><h3>Vous avez une ancienne pigmentation</h3><p>Un avis préalable est important. Toutes les situations ne se corrigent pas de la même manière.</p></div>
+    </div>
+  </section>
+
+  <section class="section-soft">
+    <h2>Et près de Tours, quelle prestation est proposée ?</h2>
+    <p>Pour les clientes qui recherchent un microblading à Tours, un microshading à Tours ou un maquillage semi-permanent des sourcils près de Tours, Grain de Beauté propose une approche centrée sur la technique mixte sourcils à Monnaie.</p>
+    <p>Monnaie est située au nord de Tours, avec un accès pratique depuis Tours Nord, Parçay-Meslay et les communes alentours. L’adresse exacte est : {business.address}.</p>
+    <p>Le tarif de la technique mixte sourcils est de {business.price}. La retouche fixatrice, réalisée dans le mois suivant la première pose, est à {business.retouch}. La retouche annuelle est à {business.annualRetouch}.</p>
+    <a class="btn" href={url('maquillage-semi-permanent-sourcils-tours/')}>Voir la page sourcils près de Tours</a>
+  </section>
+
+  <section>
+    <h2>La retouche fait partie du résultat final</h2>
+    <p>Après une première séance, la couleur évolue pendant la cicatrisation. Elle peut paraître plus foncée au début, puis s’adoucir. La retouche fixatrice permet d’ajuster le résultat après cette évolution.</p>
+    <p>Cette étape est importante, car la tenue et le rendu peuvent varier selon la peau et les soins réalisés après la séance.</p>
+    <a class="btn outline" href={url('cicatrisation-conseils/')}>Lire les conseils de cicatrisation</a>
+  </section>
+
+  <section class="faq section-soft">
+    <h2>Questions fréquentes</h2>
+    <details open><summary>Le microblading et le microshading sont-ils deux prestations différentes chez Grain de Beauté ?</summary><p>Non, commercialement la prestation principale est la technique mixte sourcils. Le microblading et le microshading sont expliqués comme deux composantes possibles du rendu.</p></details>
+    <details><summary>La technique mixte donne-t-elle forcément un effet maquillé ?</summary><p>Non. L’intensité est adaptée à la base naturelle et au souhait de la cliente. L’objectif est de structurer sans figer le regard.</p></details>
+    <details><summary>Peut-on demander un avis avant rendez-vous ?</summary><p>Oui. Vous pouvez envoyer des photos nettes en lumière naturelle pour préparer l’échange et vérifier ce qui semble possible.</p></details>
+    <details><summary>Où se situe Grain de Beauté par rapport à Tours ?</summary><p>Grain de Beauté se situe à Monnaie, près de Tours et de Parçay-Meslay, au nord de l’agglomération.</p></details>
+  </section>
+
+  <section>
+    <h2>Demander un avis avant de choisir</h2>
+    <p>Si vous hésitez entre microblading, microshading ou technique mixte, le plus simple est d’envoyer une demande avec quelques photos. Sophie pourra comprendre votre attente, repérer les points importants et vous orienter avec prudence.</p>
+    <div class="cta-row">
+      <a class="btn" href={url('demande-avis-sourcils/')}>Demander un avis pour mes sourcils</a>
+      <a class="btn outline" href={url('galerie/')}>Voir les avant/après</a>
+    </div>
+  </section>
+</Base>
