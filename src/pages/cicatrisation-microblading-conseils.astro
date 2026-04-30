@@ -1,0 +1,99 @@
+---
+import Base from '../layouts/Base.astro';
+import { business, url, whatsapp } from '../data';
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Cicatrisation microblading : étapes et conseils après une séance',
+  description: 'Comprendre la cicatrisation après microblading, microshading ou technique mixte sourcils : évolution normale, conseils et retouche.',
+  author: { '@type': 'Organization', name: business.name },
+  publisher: { '@type': 'Organization', name: business.name },
+  mainEntityOfPage: 'https://graindebeaute37.fr/cicatrisation-microblading-conseils/'
+};
+---
+<Base title="Cicatrisation microblading : conseils après séance | Grain de Beauté" description="Cicatrisation microblading et microshading : étapes normales, conseils après séance, précautions et rôle de la retouche fixatrice près de Tours." canonical="/cicatrisation-microblading-conseils/">
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(articleSchema)} />
+
+  <section>
+    <div class="eyebrow">Conseils après séance</div>
+    <h1>Cicatrisation microblading : étapes et conseils après une séance</h1>
+    <p>Après une prestation de maquillage semi-permanent des sourcils, la cicatrisation fait partie du processus normal. La couleur peut paraître plus intense au début, puis s’adoucir progressivement. Il est donc important de savoir à quoi s’attendre pour ne pas s’inquiéter trop vite.</p>
+    <p>Chez Grain de Beauté, à Monnaie près de Tours, Sophie explique les conseils après séance et le rôle de la retouche fixatrice. L’objectif est d’accompagner la cliente avec des informations simples, prudentes et adaptées à la prestation réalisée.</p>
+    <div class="cta-row">
+      <a class="btn" href={url('cicatrisation-conseils/')}>Voir la page conseils</a>
+      <a class="btn outline" href={whatsapp}>Poser une question à Sophie</a>
+    </div>
+  </section>
+
+  <section class="section-soft">
+    <h2>Ce qui peut être normal après une séance</h2>
+    <p>Dans les jours qui suivent une technique mixte sourcils, un microblading ou un microshading, l’aspect des sourcils évolue. Cette évolution ne signifie pas forcément que le résultat final est déjà visible.</p>
+    <div class="grid">
+      <div class="card"><h3>Une couleur plus foncée au départ</h3><p>Juste après la séance, la pigmentation peut sembler plus marquée. Elle s’adoucit généralement au fil de la cicatrisation.</p></div>
+      <div class="card"><h3>Une impression de perte d’intensité</h3><p>Après quelques jours, la couleur peut paraître moins présente. C’est une étape fréquente avant stabilisation progressive.</p></div>
+      <div class="card"><h3>Un rendu qui se stabilise avec le temps</h3><p>Le résultat doit être observé après l’évolution de la peau, et non uniquement le jour de la prestation.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Les grandes étapes de cicatrisation</h2>
+    <p>Chaque peau réagit différemment. Les délais peuvent donc varier selon la personne, le type de peau, les soins réalisés et l’évolution naturelle après la séance.</p>
+    <div class="grid">
+      <div class="card"><span class="num">1</span><h3>Les premiers jours</h3><p>Le sourcil peut paraître plus dessiné et plus foncé. Il faut suivre les conseils donnés après la séance et éviter de manipuler inutilement la zone.</p></div>
+      <div class="card"><span class="num">2</span><h3>La phase d’évolution</h3><p>La peau travaille. Le rendu peut sembler changer : parfois plus clair, parfois irrégulier visuellement. Cette étape ne permet pas toujours de juger le résultat final.</p></div>
+      <div class="card"><span class="num">3</span><h3>La stabilisation</h3><p>Le rendu devient plus lisible progressivement. La retouche fixatrice permet ensuite d’ajuster ce qui doit l’être.</p></div>
+    </div>
+  </section>
+
+  <section class="section-soft">
+    <h2>Conseils après microblading, microshading ou technique mixte</h2>
+    <p>Les consignes exactes sont données par Sophie après la séance. De manière générale, l’idée est de laisser la zone évoluer proprement et d’éviter ce qui pourrait perturber la cicatrisation.</p>
+    <ul class="check-list">
+      <li>Éviter de gratter ou frotter les sourcils.</li>
+      <li>Éviter le maquillage directement sur la zone pendant la période indiquée.</li>
+      <li>Limiter l’exposition au soleil selon les recommandations données.</li>
+      <li>Éviter les soins agressifs ou non adaptés sur la zone.</li>
+      <li>Respecter les conseils transmis après la prestation.</li>
+      <li>Contacter Sophie en cas de doute sur l’évolution du rendu.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Pourquoi la retouche fixatrice est importante</h2>
+    <p>La retouche fixatrice se réalise dans le mois suivant la première pose. Elle permet de revoir le résultat après cicatrisation et d’ajuster si nécessaire certaines zones ou l’intensité.</p>
+    <p>Chez Grain de Beauté, la retouche fixatrice est proposée à {business.retouch}. Elle complète la première prestation, car la peau peut faire évoluer le rendu de manière différente d’une cliente à l’autre.</p>
+    <a class="btn outline" href={url('tarifs/')}>Voir les tarifs des retouches</a>
+  </section>
+
+  <section class="section-soft">
+    <h2>Quand demander conseil ?</h2>
+    <p>Si vous avez un doute sur l’évolution de vos sourcils après la séance, le plus simple est de contacter Sophie avec une photo nette en lumière naturelle. Cela permet de regarder l’évolution et de vous répondre plus précisément.</p>
+    <p>En cas de réaction inhabituelle ou de doute persistant, demandez conseil à un professionnel de santé.</p>
+    <a class="btn" href={url('demande-avis-sourcils/')}>Envoyer une demande avec photos</a>
+  </section>
+
+  <section>
+    <h2>À Monnaie, près de Tours</h2>
+    <p>Grain de Beauté accompagne les clientes de Monnaie, Tours Nord, Parçay-Meslay et des communes alentours pour la technique mixte sourcils. Cette prestation associe microblading et microshading pour rechercher un rendu naturel, structuré et adapté au visage.</p>
+    <p>Avant chaque prestation, un échange permet de comprendre votre demande, de vérifier ce qui est possible et d’expliquer le déroulement ainsi que les soins après séance.</p>
+    <a class="btn outline" href={url('maquillage-semi-permanent-sourcils-tours/')}>Sourcils près de Tours</a>
+  </section>
+
+  <section class="faq section-soft">
+    <h2>Questions fréquentes sur la cicatrisation</h2>
+    <details open><summary>La couleur est-elle définitive juste après la séance ?</summary><p>Non. La couleur évolue pendant la cicatrisation. Elle peut paraître plus foncée au début puis s’adoucir.</p></details>
+    <details><summary>Est-ce normal si le rendu semble changer les premiers jours ?</summary><p>Oui, le rendu peut évoluer visuellement pendant la cicatrisation. Il faut attendre la stabilisation avant de juger le résultat final.</p></details>
+    <details><summary>À quoi sert la retouche fixatrice ?</summary><p>Elle permet d’ajuster le résultat après l’évolution de la peau. Chez Grain de Beauté, elle est prévue dans le mois suivant la première pose.</p></details>
+    <details><summary>Que faire en cas de doute ?</summary><p>Vous pouvez contacter Sophie avec une photo nette en lumière naturelle. En cas de réaction inhabituelle ou de doute persistant, demandez conseil à un professionnel de santé.</p></details>
+  </section>
+
+  <section>
+    <h2>Préparer votre première demande</h2>
+    <p>Si vous souhaitez un avis avant rendez-vous, envoyez des photos simples : visage de face, sourcil gauche et sourcil droit, en lumière naturelle, sans filtre et si possible sans maquillage.</p>
+    <div class="cta-row">
+      <a class="btn" href={url('demande-avis-sourcils/')}>Demander un avis pour mes sourcils</a>
+      <a class="btn outline" href={url('technique-mixte-sourcils/')}>Découvrir la technique mixte</a>
+    </div>
+  </section>
+</Base>
