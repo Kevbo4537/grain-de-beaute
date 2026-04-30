@@ -1,0 +1,108 @@
+---
+import Base from '../layouts/Base.astro';
+import { business, url, whatsapp } from '../data';
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Prix microblading Tours : que faut-il comparer avant de choisir ?',
+  description: 'Comprendre le prix d’une prestation sourcils près de Tours : technique, retouche, échange préalable, cicatrisation et tarif Grain de Beauté.',
+  author: { '@type': 'Organization', name: business.name },
+  publisher: { '@type': 'Organization', name: business.name },
+  mainEntityOfPage: 'https://graindebeaute37.fr/prix-microblading-tours/'
+};
+---
+<Base title="Prix microblading Tours : tarif et conseils | Grain de Beauté" description="Prix microblading Tours : comprendre ce qui influence le tarif. Chez Grain de Beauté près de Tours, technique mixte sourcils 210 €, retouches 70 € et 90 €." canonical="/prix-microblading-tours/">
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(articleSchema)} />
+
+  <section>
+    <div class="eyebrow">Tarifs sourcils près de Tours</div>
+    <h1>Prix microblading Tours : que faut-il comparer avant de choisir ?</h1>
+    <p>Quand on recherche un prix de microblading à Tours, il est naturel de vouloir comparer les tarifs. Mais le prix seul ne suffit pas pour choisir une prestation sur le visage. Il faut aussi regarder la technique proposée, l’échange préalable, l’hygiène, le dessin préparatoire, la retouche et le sérieux du suivi.</p>
+    <p>Chez Grain de Beauté, à Monnaie près de Tours, la prestation principale est la technique mixte sourcils. Elle associe le microblading et le microshading pour travailler à la fois l’effet poil à poil et l’ombrage doux.</p>
+    <div class="cta-row">
+      <a class="btn" href={url('tarifs/')}>Voir les tarifs</a>
+      <a class="btn outline" href={whatsapp}>Demander un avis sur WhatsApp</a>
+    </div>
+  </section>
+
+  <section class="section-soft">
+    <h2>Le tarif Grain de Beauté</h2>
+    <div class="grid">
+      <div class="price-card">
+        <div class="eyebrow">Prestation principale</div>
+        <h3>Technique mixte sourcils</h3>
+        <div class="price">{business.price}</div>
+        <p>Microblading + microshading, avec dessin préparatoire et échange sur le rendu souhaité.</p>
+      </div>
+      <div class="card">
+        <h3>Retouche fixatrice</h3>
+        <p><strong>{business.retouch}</strong><br/>Retouche fixatrice dans le mois suivant la première pose.</p>
+      </div>
+      <div class="card">
+        <h3>Retouche annuelle</h3>
+        <p><strong>{business.annualRetouch}</strong><br/>Entretien annuel pour raviver et ajuster le rendu selon l’évolution.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pourquoi les prix peuvent varier d’un institut à l’autre ?</h2>
+    <p>Les tarifs peuvent varier selon plusieurs éléments : l’expérience de la praticienne, la technique utilisée, le temps consacré au dessin, les conditions d’hygiène, la qualité du suivi, la zone géographique et la présence ou non d’une retouche.</p>
+    <p>Pour une prestation de maquillage semi-permanent des sourcils, l’objectif n’est pas de choisir uniquement le prix le plus bas. Le plus important est de comprendre ce qui est inclus et de se sentir en confiance avant de commencer.</p>
+  </section>
+
+  <section class="section-soft">
+    <h2>Comparer un prix, c’est aussi comparer le déroulement</h2>
+    <div class="grid">
+      <div class="card"><h3>L’échange préalable</h3><p>Il permet de comprendre votre demande, vos habitudes de maquillage, vos craintes et le résultat souhaité.</p></div>
+      <div class="card"><h3>Le dessin préparatoire</h3><p>La ligne est travaillée avant la pigmentation. Elle doit être validée avec vous et respecter la morphologie du visage.</p></div>
+      <div class="card"><h3>La retouche</h3><p>La couleur évolue après la première séance. La retouche fixatrice permet d’ajuster le rendu après cicatrisation.</p></div>
+    </div>
+    <a class="btn outline" href={url('deroulement-seance/')}>Voir le déroulement d’une séance</a>
+  </section>
+
+  <section>
+    <h2>Microblading, microshading ou technique mixte : attention à la comparaison</h2>
+    <p>Sur internet, les recherches “microblading Tours” ou “prix microblading Tours” sont fréquentes. Mais tous les instituts ne présentent pas les prestations de la même manière.</p>
+    <p>Chez Grain de Beauté, le microblading et le microshading ne sont pas mis en avant comme deux prestations principales séparées. Ils sont expliqués comme deux composantes de la technique mixte sourcils, proposée à {business.price}.</p>
+    <p>Cette approche permet d’adapter le rendu : plus fin, plus structuré, plus doux ou légèrement maquillé selon la base naturelle et l’objectif de la cliente.</p>
+    <a class="btn outline" href={url('difference-microblading-microshading-technique-mixte/')}>Comprendre la différence entre les techniques</a>
+  </section>
+
+  <section class="section-soft">
+    <h2>Ce qui doit vous rassurer avant de prendre rendez-vous</h2>
+    <ul class="check-list">
+      <li>Une explication claire de la technique proposée.</li>
+      <li>Un tarif affiché sans ambiguïté.</li>
+      <li>Un échange préalable avant la prestation.</li>
+      <li>Un dessin préparatoire validé avec la cliente.</li>
+      <li>Des conseils de cicatrisation simples et prudents.</li>
+      <li>Une attention portée à l’hygiène et à la sécurité.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>À Monnaie, près de Tours Nord et Parçay-Meslay</h2>
+    <p>Grain de Beauté se situe à Monnaie, au nord de l’agglomération tourangelle. Pour les clientes qui recherchent un microblading à Tours, un microshading à Tours ou un maquillage permanent des sourcils près de Tours, l’adresse est accessible depuis Tours Nord, Parçay-Meslay et les communes alentours.</p>
+    <p>L’établissement n’est pas situé dans Tours même : il est situé à Monnaie, près de Tours. Cette précision est importante pour rester clair et honnête.</p>
+    <a class="btn" href={url('maquillage-semi-permanent-sourcils-tours/')}>Voir la page sourcils près de Tours</a>
+  </section>
+
+  <section class="faq section-soft">
+    <h2>Questions fréquentes sur le prix</h2>
+    <details open><summary>Quel est le prix de la technique mixte sourcils chez Grain de Beauté ?</summary><p>Le tarif est de {business.price}. La retouche fixatrice dans le mois suivant la première pose est à {business.retouch}. La retouche annuelle est à {business.annualRetouch}.</p></details>
+    <details><summary>La retouche est-elle importante ?</summary><p>Oui. Après la première séance, la couleur évolue pendant la cicatrisation. La retouche fixatrice permet d’ajuster le rendu selon cette évolution.</p></details>
+    <details><summary>Le prix dépend-il du résultat souhaité ?</summary><p>Le tarif de référence est affiché clairement. En cas d’ancienne pigmentation, de doute ou de situation particulière, un échange préalable permet de vérifier ce qui est possible.</p></details>
+    <details><summary>Peut-on envoyer des photos avant de prendre rendez-vous ?</summary><p>Oui. Vous pouvez envoyer des photos nettes, sans filtre, en lumière naturelle, pour préparer un premier avis.</p></details>
+  </section>
+
+  <section>
+    <h2>Demander un avis avant de comparer uniquement les prix</h2>
+    <p>Si vous hésitez, le plus utile est de demander un avis avec quelques photos. Cela permet de comprendre votre demande, de repérer une ancienne pigmentation éventuelle et de voir si la technique mixte correspond à votre objectif.</p>
+    <div class="cta-row">
+      <a class="btn" href={url('demande-avis-sourcils/')}>Demander un avis pour mes sourcils</a>
+      <a class="btn outline" href={url('galerie/')}>Voir les avant/après</a>
+    </div>
+  </section>
+</Base>

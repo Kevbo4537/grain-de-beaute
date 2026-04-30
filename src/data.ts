@@ -12,7 +12,8 @@ export const business = {
   price: '210 €',
   retouch: '70 €',
   annualRetouch: '90 €',
-  whatsappText: 'Bonjour Sophie, je souhaite avoir un avis pour mes sourcils. Je vais vous envoyer quelques photos : visage de face, sourcil gauche et sourcil droit.'
+  whatsappText: 'Bonjour Sophie, je souhaite avoir un avis pour mes sourcils. Je vais vous envoyer quelques photos : visage de face, sourcil gauche et sourcil droit.',
+  googleBusinessUrl: 'https://www.google.com/maps/place/Grain+de+beaut%C3%A9:+Micropigmentation,+Microblading,+Microshading/@47.4705629,0.7788172,17z/data=!3m1!4b1!4m6!3m5!1s0x47e32d41ad32aa9b:0x23c02dfe8cd1321d!8m2!3d47.4705629!4d0.7788172!16s%2Fg%2F11r1c0h2c5'
 };
 
 export const mainNav = [
