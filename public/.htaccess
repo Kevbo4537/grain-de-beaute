@@ -1,3 +1,10 @@
 RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.graindebeaute37\.fr$ [NC]
+RewriteRule ^ https://graindebeaute37.fr%{REQUEST_URI} [L,R=301]
+
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>
