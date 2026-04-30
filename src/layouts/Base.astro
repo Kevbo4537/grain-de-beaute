@@ -34,6 +34,12 @@ const schema = {
   <meta property="og:type" content="website" />
   <meta property="og:url" content={canonicalUrl} />
   <meta property="og:image" content={new URL(url('images/hero-sourcils.png'), Astro.site || 'https://kevbo4537.github.io').toString()} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={new URL(url('images/hero-sourcils.png'), Astro.site || 'https://kevbo4537.github.io').toString()} />
+  <link rel="icon" href={url('favicon.png')} type="image/png" />
+  <link rel="apple-touch-icon" href={url('apple-touch-icon.png')} />
   <script type="application/ld+json" is:inline set:html={JSON.stringify(schema)} />
   <link rel="stylesheet" href={url('styles.css')} />
 </head>
