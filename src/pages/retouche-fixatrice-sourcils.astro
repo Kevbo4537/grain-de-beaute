@@ -1,0 +1,81 @@
+---
+import Base from '../layouts/Base.astro';
+import { business, url, whatsapp } from '../data';
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Retouche fixatrice sourcils : pourquoi est-elle importante ?',
+  description: 'Comprendre le rôle de la retouche fixatrice après microblading, microshading ou technique mixte sourcils près de Tours.',
+  author: { '@type': 'Organization', name: business.name },
+  publisher: { '@type': 'Organization', name: business.name },
+  mainEntityOfPage: 'https://graindebeaute37.fr/retouche-fixatrice-sourcils/'
+};
+---
+<Base title="Retouche microblading Tours : rôle et tarif | Grain de Beauté" description="Retouche microblading et technique mixte sourcils près de Tours : comprendre la retouche fixatrice, son rôle après cicatrisation et son tarif de 70 €." canonical="/retouche-fixatrice-sourcils/">
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(articleSchema)} />
+
+  <section>
+    <div class="eyebrow">Retouche sourcils près de Tours</div>
+    <h1>Retouche fixatrice sourcils : pourquoi est-elle importante ?</h1>
+    <p>Après une première séance de maquillage semi-permanent des sourcils, le résultat évolue avec la cicatrisation. La couleur peut s’adoucir, certaines zones peuvent paraître plus claires, et le rendu final ne se juge pas uniquement le jour de la prestation.</p>
+    <p>Chez Grain de Beauté, à Monnaie près de Tours, la retouche fixatrice permet de revoir le résultat après cette première évolution et d’ajuster ce qui doit l’être.</p>
+    <div class="cta-row"><a class="btn" href={url('tarifs/')}>Voir les tarifs</a><a class="btn outline" href={whatsapp}>Demander un avis sur WhatsApp</a></div>
+  </section>
+
+  <section class="section-soft">
+    <h2>À quoi sert la retouche fixatrice ?</h2>
+    <p>La peau de chaque cliente réagit différemment. Même avec une prestation bien réalisée, l’intensité peut évoluer pendant les semaines qui suivent. La retouche fixatrice sert à observer le rendu stabilisé et à ajuster la ligne ou l’intensité si nécessaire.</p>
+    <div class="grid">
+      <div class="card"><span class="num">1</span><h3>Observer le rendu après cicatrisation</h3><p>La première étape consiste à regarder comment la peau a fait évoluer la pigmentation.</p></div>
+      <div class="card"><span class="num">2</span><h3>Ajuster certaines zones</h3><p>Si une zone paraît plus claire ou moins régulière, la retouche permet de corriger avec mesure.</p></div>
+      <div class="card"><span class="num">3</span><h3>Stabiliser le résultat</h3><p>L’objectif est de finaliser un rendu harmonieux, naturel et cohérent avec le visage.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Retouche microblading, microshading ou technique mixte : même logique</h2>
+    <p>Les recherches “retouche microblading Tours” ou “retouche maquillage semi-permanent sourcils” désignent souvent le même besoin : vérifier le résultat après cicatrisation et compléter la première séance si nécessaire.</p>
+    <p>Chez Grain de Beauté, la prestation principale est la technique mixte sourcils. Elle associe microblading et microshading. La retouche fixatrice concerne donc l’ensemble du rendu, pas seulement une partie de la technique.</p>
+    <a class="btn outline" href={url('difference-microblading-microshading-technique-mixte/')}>Comprendre les techniques</a>
+  </section>
+
+  <section class="section-soft">
+    <h2>Quand se fait la retouche fixatrice ?</h2>
+    <p>La retouche fixatrice est prévue dans le mois suivant la première pose. Ce délai permet de laisser le rendu évoluer, tout en gardant un suivi rapproché après la prestation initiale.</p>
+    <p>Il ne faut pas chercher à juger trop vite le résultat dans les premiers jours. La couleur et l’aspect peuvent varier pendant la phase de cicatrisation.</p>
+    <a class="btn outline" href={url('cicatrisation-microblading-conseils/')}>Lire les conseils de cicatrisation</a>
+  </section>
+
+  <section>
+    <h2>Tarif de la retouche fixatrice chez Grain de Beauté</h2>
+    <div class="grid two">
+      <div class="price-card"><div class="eyebrow">Retouche fixatrice</div><h3>Dans le mois suivant la première pose</h3><div class="price">{business.retouch}</div><p>La première prestation de technique mixte sourcils est affichée à {business.price}. La retouche annuelle est à {business.annualRetouch}.</p></div>
+      <div><p>Le tarif est clair afin de savoir à quoi s’attendre avant de prendre rendez-vous. En cas d’ancienne pigmentation, de doute ou de situation particulière, un échange préalable permet de vérifier ce qui est possible.</p><p>Vous pouvez envoyer des photos nettes en lumière naturelle pour préparer l’avis de Sophie.</p><a class="btn" href={url('demande-avis-sourcils/')}>Envoyer une demande avec photos</a></div>
+    </div>
+  </section>
+
+  <section class="section-soft">
+    <h2>Pourquoi ne pas négliger cette étape ?</h2>
+    <ul class="check-list">
+      <li>Elle permet de tenir compte de la cicatrisation réelle.</li>
+      <li>Elle aide à ajuster l’intensité sans surcharger le rendu dès la première séance.</li>
+      <li>Elle améliore la régularité visuelle de la ligne.</li>
+      <li>Elle permet de refaire un point avec Sophie sur l’évolution des sourcils.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>À Monnaie, près de Tours</h2>
+    <p>Grain de Beauté accueille les clientes à Monnaie, près de Tours Nord et Parçay-Meslay, sur rendez-vous uniquement. La retouche fixatrice s’inscrit dans le suivi normal d’une technique mixte sourcils.</p>
+    <div class="cta-row"><a class="btn" href={url('maquillage-semi-permanent-sourcils-tours/')}>Sourcils près de Tours</a><a class="btn outline" href={url('technique-mixte-sourcils/')}>Technique mixte sourcils</a></div>
+  </section>
+
+  <section class="faq section-soft">
+    <h2>Questions fréquentes sur la retouche</h2>
+    <details open><summary>La retouche fixatrice est-elle obligatoire ?</summary><p>Elle est fortement conseillée, car le rendu évolue après la première séance. Elle permet d’ajuster le résultat après cicatrisation.</p></details>
+    <details><summary>Quel est le prix de la retouche fixatrice ?</summary><p>Chez Grain de Beauté, la retouche fixatrice dans le mois suivant la première pose est à {business.retouch}.</p></details>
+    <details><summary>La retouche annuelle est-elle la même chose ?</summary><p>Non. La retouche fixatrice suit la première pose. La retouche annuelle, proposée à {business.annualRetouch}, sert plutôt à entretenir le rendu dans le temps.</p></details>
+    <details><summary>Peut-on demander un avis avant rendez-vous ?</summary><p>Oui. Vous pouvez envoyer quelques photos nettes en lumière naturelle pour préparer un premier échange.</p></details>
+  </section>
+</Base>
