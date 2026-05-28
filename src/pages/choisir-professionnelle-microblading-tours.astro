@@ -1,0 +1,72 @@
+---
+import Base from '../layouts/Base.astro';
+import { business, url, whatsapp, tel } from '../data';
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Microblading près de Tours : comment choisir une professionnelle sérieuse ?',
+  description: 'Les critères utiles avant de choisir une professionnelle pour une technique sourcils près de Tours : échange, hygiène, dessin, tarifs et suivi.',
+  author: { '@type': 'Organization', name: business.name },
+  publisher: { '@type': 'Organization', name: business.name },
+  mainEntityOfPage: 'https://graindebeaute37.fr/choisir-professionnelle-microblading-tours/'
+};
+---
+<Base title="Microblading Tours : choisir une professionnelle sérieuse" description="Microblading près de Tours : les critères pour choisir une professionnelle sérieuse pour vos sourcils, avec hygiène, dessin, tarifs clairs et suivi." canonical="/choisir-professionnelle-microblading-tours/">
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(articleSchema)} />
+
+  <section>
+    <div class="eyebrow">Conseils avant rendez-vous · Tours et Monnaie</div>
+    <h1>Microblading près de Tours : comment choisir une professionnelle sérieuse ?</h1>
+    <p>Choisir une prestation sourcils ne doit pas se faire uniquement sur une photo ou sur un prix. Le plus important est de comprendre l’approche, l’hygiène, le dessin préparatoire, le suivi et le résultat recherché.</p>
+    <p>Chez Grain de Beauté, à Monnaie près de Tours, la prestation principale est la <a href={url('technique-mixte-sourcils/')}>technique mixte sourcils</a> : elle associe microblading et microshading pour travailler à la fois l’effet poil à poil et l’ombrage doux.</p>
+  </section>
+
+  <section class="section-soft">
+    <h2>1. Vérifier que l’échange préalable est clair</h2>
+    <p>Une professionnelle sérieuse prend le temps de comprendre votre demande : sourcils clairsemés, ancienne ligne, manque de structure, envie d’un résultat naturel ou besoin de corriger une asymétrie légère.</p>
+    <p>Avant de réserver, vous devez pouvoir poser vos questions et expliquer ce que vous attendez. Un échange avec photos peut aider à savoir si une séance est pertinente.</p>
+  </section>
+
+  <section>
+    <h2>2. Regarder le dessin préparatoire, pas seulement la technique</h2>
+    <p>Le microblading, le microshading ou la technique mixte ne suffisent pas à garantir un beau résultat. La forme doit être pensée selon votre visage, votre ligne naturelle et l’équilibre du regard.</p>
+    <p>Le dessin préparatoire doit être validé avant la réalisation. Rien ne doit être fait dans la précipitation.</p>
+  </section>
+
+  <section class="section-soft">
+    <h2>3. S’assurer que l’hygiène et les limites sont expliquées</h2>
+    <p>Une prestation de maquillage semi-permanent demande une approche propre, structurée et prudente. La professionnelle doit expliquer les consignes avant et après séance, la cicatrisation, les précautions et les cas où il vaut mieux demander un avis adapté.</p>
+    <p>Grain de Beauté met en avant une approche simple : explication, hygiène, dessin, réalisation, conseils et retouche si nécessaire.</p>
+    <a class="btn outline" href={url('hygiene-securite/')}>Voir l’hygiène et la sécurité</a>
+  </section>
+
+  <section>
+    <h2>4. Comparer un tarif complet, pas un prix isolé</h2>
+    <p>Quand on cherche un prix de microblading à Tours, il faut comparer ce qui est réellement inclus : échange préalable, dessin, prestation, conseils, retouche fixatrice, suivi et transparence sur les limites.</p>
+    <p>Chez Grain de Beauté, le tarif annoncé est clair : technique mixte sourcils à {business.price}, retouche fixatrice à {business.retouch} et retouche annuelle à {business.annualRetouch}.</p>
+    <a class="btn" href={url('prix-microblading-tours/')}>Comprendre le prix</a>
+    <a class="btn outline" href={url('tarifs/')}>Voir les tarifs</a>
+  </section>
+
+  <section class="section-soft">
+    <h2>5. Regarder les photos avant/après avec prudence</h2>
+    <p>Les photos avant/après sont utiles, mais elles ne remplacent pas l’échange. Chaque peau, chaque ligne naturelle et chaque cicatrisation évolue différemment.</p>
+    <p>Une galerie doit servir à se faire une idée du style : naturel, structuré, doux, mais sans promettre un résultat identique pour chaque cliente.</p>
+    <a class="btn outline" href={url('galerie/')}>Voir la galerie</a>
+  </section>
+
+  <section>
+    <h2>6. Tenir compte de la proximité réelle</h2>
+    <p>Grain de Beauté n’est pas situé au centre de Tours : Sophie vous reçoit à Monnaie, au nord de Tours, près de Parçay-Meslay. Cette précision est importante pour choisir un rendez-vous réaliste et éviter toute confusion.</p>
+    <p>Pour les clientes de Tours Nord, Parçay-Meslay, Monnaie et des communes alentours, l’accès reste simple sur rendez-vous.</p>
+  </section>
+
+  <section class="section-soft">
+    <h2>Avant de réserver</h2>
+    <p>Si vous hésitez, le plus simple est d’envoyer quelques photos et d’expliquer votre demande. Sophie vous dira si la technique mixte semble adaptée ou si un avis préalable est préférable.</p>
+    <a class="btn" href={url('demande-avis-sourcils/')}>Demander un avis</a>
+    <a class="btn outline" href={whatsapp}>Écrire sur WhatsApp</a>
+    <a class="btn outline" href={tel}>Appeler Sophie</a>
+  </section>
+</Base>

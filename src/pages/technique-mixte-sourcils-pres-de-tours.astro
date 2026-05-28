@@ -1,18 +1,43 @@
 ---
 import Base from '../layouts/Base.astro';
-import { business, url } from '../data';
+import { business, url, tel, whatsapp } from '../data';
 ---
-<Base title="Technique mixte sourcils près de Tours | Grain de Beauté" description="Grain de Beauté est situé à Monnaie, près de Tours, pour une prestation de technique mixte sourcils naturelle et structurée." canonical="/technique-mixte-sourcils-pres-de-tours/">
+<Base title="Technique mixte sourcils près de Tours Nord | Grain de Beauté" description="Technique mixte sourcils à Monnaie près de Tours Nord : microblading et microshading, tarif clair, accès depuis Tours et Parçay-Meslay." canonical="/technique-mixte-sourcils-pres-de-tours/">
   <section>
-    <div class="eyebrow">Monnaie · Nord de Tours</div>
+    <div class="eyebrow">Monnaie · Tours Nord · Parçay-Meslay</div>
     <h1>Technique mixte sourcils près de Tours</h1>
-    <p>Grain de Beauté vous accueille à Monnaie, à proximité de Tours et de Parçay-Meslay, pour une prestation de technique mixte sourcils.</p>
-    <p>Vous trouverez ici les informations pratiques pour venir à Monnaie et contacter Sophie autour d’une prestation sourcils près de Tours.</p>
-    <a class="btn" href={url('contact/')}>Voir l’accès</a>
+    <p>Grain de Beauté vous accueille à Monnaie, au nord de Tours, pour une prestation de technique mixte sourcils. L’objectif est de redessiner une ligne naturelle, structurée et adaptée à votre visage.</p>
+    <p>La prestation associe microblading et microshading : l’effet poil à poil aide à restructurer la ligne, tandis que l’ombrage doux apporte de la densité sans durcir le regard.</p>
+    <a class="btn" href={url('demande-avis-sourcils/')}>Demander un avis</a>
+    <a class="btn outline" href={url('contact/')}>Voir l’accès</a>
   </section>
+
   <section class="section-soft">
-    <h2>Pourquoi venir à Monnaie ?</h2>
-    <p>Vous êtes reçue sur rendez-vous, avec le temps d’échanger sur votre ligne naturelle et le résultat souhaité.</p>
-    <p>Adresse : {business.address}</p>
+    <h2>Une adresse à Monnaie, près de Tours</h2>
+    <p>Le rendez-vous se déroule au {business.address}. L’adresse est pratique pour les clientes venant de Monnaie, Tours Nord, Parçay-Meslay et des communes alentours.</p>
+    <p>Le site indique clairement la localisation : Grain de Beauté est près de Tours, mais l’institut n’est pas situé dans le centre de Tours.</p>
+  </section>
+
+  <section>
+    <h2>Pour quelles recherches cette page est utile ?</h2>
+    <p>Si vous cherchez un microblading à Tours, un microshading près de Tours ou un maquillage semi-permanent des sourcils autour de Tours Nord, cette page vous aide à comprendre l’approche proposée par Sophie.</p>
+    <p>La prestation commerciale reste centrée sur la technique mixte sourcils, avec un tarif clair : {business.price}, retouche fixatrice {business.retouch}, retouche annuelle {business.annualRetouch}.</p>
+    <a class="btn outline" href={url('tarifs/')}>Voir les tarifs</a>
+    <a class="btn outline" href={url('prix-microblading-tours/')}>Comprendre le prix</a>
+  </section>
+
+  <section class="section-soft">
+    <h2>Pourquoi prendre le temps d’un échange ?</h2>
+    <p>Chaque ligne de sourcils est différente. Avant une prestation, Sophie prend le temps d’échanger avec vous, d’observer votre ligne naturelle et de préparer un dessin cohérent avec votre visage.</p>
+    <p>Si vous avez une ancienne pigmentation, une hésitation sur le rendu ou une question sur la cicatrisation, il est préférable d’en parler avant de bloquer une séance.</p>
+    <a class="btn" href={url('choisir-professionnelle-microblading-tours/')}>Comment choisir une professionnelle sérieuse ?</a>
+  </section>
+
+  <section>
+    <h2>Contact et accès</h2>
+    <p>Les rendez-vous se font uniquement sur demande. Vous pouvez appeler Sophie, envoyer un SMS ou écrire sur WhatsApp pour présenter votre besoin et, si besoin, transmettre des photos.</p>
+    <a class="btn" href={tel}>Appeler Sophie</a>
+    <a class="btn outline" href={whatsapp}>Écrire sur WhatsApp</a>
+    <a class="btn outline" href={url('contact/')}>Voir la page contact</a>
   </section>
 </Base>
