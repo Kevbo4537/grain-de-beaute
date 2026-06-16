@@ -27,6 +27,7 @@ export const mainNav = [
 export const infoNav = [
   ['Cicatrisation et conseils', '/cicatrisation-conseils/'],
   ['Près de Tours', '/maquillage-semi-permanent-sourcils-tours/'],
+  ['Esthéticienne Monnaie', '/estheticienne-monnaie/'],
   ['Déroulement d’une séance', '/deroulement-seance/'],
   ['Hygiène et sécurité', '/hygiene-securite/'],
   ['À propos de Sophie', '/sophie-bodin/']

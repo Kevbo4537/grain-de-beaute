@@ -1,0 +1,71 @@
+---
+import Base from '../layouts/Base.astro';
+import { business, url, whatsapp, tel } from '../data';
+
+const localSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Esthéticienne à Monnaie spécialisée sourcils',
+  description: 'Grain de Beauté à Monnaie : Sophie Bodin accompagne les clientes pour la technique mixte sourcils, microblading et microshading près de Tours.',
+  mainEntity: {
+    '@type': 'BeautySalon',
+    name: business.name,
+    telephone: business.phoneHref,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '364 route de la Sinsonnière',
+      postalCode: '37380',
+      addressLocality: 'Monnaie',
+      addressCountry: 'FR'
+    }
+  }
+};
+---
+<Base title="Esthéticienne à Monnaie | Sourcils Grain de Beauté" description="Esthéticienne à Monnaie près de Tours : Sophie Bodin propose la technique mixte sourcils, microblading et microshading, sur rendez-vous." canonical="/estheticienne-monnaie/">
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(localSchema)} />
+
+  <section>
+    <div class="eyebrow">Monnaie · près de Tours Nord</div>
+    <h1>Esthéticienne à Monnaie spécialisée sourcils</h1>
+    <p>Vous recherchez une esthéticienne à Monnaie pour les sourcils ? Grain de Beauté vous accueille sur rendez-vous au {business.address}, près de Tours Nord et Parçay-Meslay.</p>
+    <p>Sophie Bodin accompagne principalement les clientes qui souhaitent redessiner leurs sourcils avec une technique mixte associant microblading et microshading. L’objectif : une ligne plus structurée, adaptée au visage, sans promettre un résultat identique d’une personne à l’autre.</p>
+    <div class="cta-row">
+      <a class="btn" href={url('demande-avis-sourcils/')}>Demander un avis</a>
+      <a class="btn outline" href={whatsapp}>Écrire sur WhatsApp</a>
+      <a class="btn outline" href={tel}>Appeler Sophie</a>
+    </div>
+  </section>
+
+  <section class="section-soft">
+    <h2>Une adresse beauté à Monnaie pour les sourcils</h2>
+    <div class="grid two">
+      <div>
+        <p>Grain de Beauté n’est pas un institut généraliste avec une longue liste de prestations. Le positionnement est clair : le travail des sourcils, avec une prestation principale centrée sur la technique mixte.</p>
+        <p>Cette spécialisation permet de prendre le temps d’échanger sur votre demande, d’observer votre ligne naturelle et de préparer un dessin cohérent avec votre visage.</p>
+      </div>
+      <div class="card">
+        <h3>Prestation principale</h3>
+        <p><strong>Technique mixte sourcils : {business.price}</strong><br/>Microblading + microshading, avec dessin préparatoire et conseils après séance.</p>
+        <a class="btn outline" href={url('technique-mixte-sourcils/')}>Découvrir la technique mixte</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pour les clientes de Monnaie, Tours Nord et Parçay-Meslay</h2>
+    <p>L’adresse est située à Monnaie, au nord de l’agglomération tourangelle. Elle peut convenir aux clientes venant de Monnaie, Tours Nord, Parçay-Meslay, Chanceaux-sur-Choisille, Vouvray, Rochecorbon et des communes proches.</p>
+    <p>Le site reste volontairement transparent : Grain de Beauté est à Monnaie, près de Tours, et non dans le centre de Tours.</p>
+    <div class="cta-row">
+      <a class="btn outline" href={url('maquillage-semi-permanent-sourcils-tours/')}>Sourcils près de Tours</a>
+      <a class="btn outline" href={url('prix-microblading-tours/')}>Voir les prix</a>
+      <a class="btn outline" href={url('galerie/')}>Voir les avant/après</a>
+    </div>
+  </section>
+
+  <section class="section-soft faq">
+    <h2>Questions fréquentes</h2>
+    <details open><summary>Grain de Beauté est-il situé à Monnaie ?</summary><p>Oui. L’adresse est {business.address}. Les rendez-vous se font uniquement sur prise de contact préalable.</p></details>
+    <details><summary>Quelles prestations sont proposées ?</summary><p>La prestation principale est la technique mixte sourcils, qui associe microblading et microshading. Les tarifs sont affichés clairement : {business.price}, retouche fixatrice {business.retouch}, retouche annuelle {business.annualRetouch}.</p></details>
+    <details><summary>Peut-on envoyer des photos avant de se déplacer ?</summary><p>Oui. Vous pouvez envoyer quelques photos nettes, en lumière naturelle, pour préparer un premier avis avant rendez-vous.</p></details>
+  </section>
+</Base>
